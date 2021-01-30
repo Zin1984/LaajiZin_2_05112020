@@ -1,0 +1,72 @@
+/**********************/
+/*******GENERAL*****/
+/**********************/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family : /* A mettre */;
+}
+
+h1{
+    font-size: /* A mettre */;
+}
+
+h2{
+    font-size: /* A mettre */;
+}
+
+h3{
+    font-size: /* A mettre */;
+}
+
+h4{
+    font-size: /* A mettre */;
+}
+/**********************/
+/*******PROVISOIRE*****/
+/**********************/
+
+img{
+    max-width:150px;
+}
+
+
+
+/**********************/
+/*******HEADER*********/
+/**********************/
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+header img{
+    margin-left: 15px;
+}
+
+header > a{
+    margin-right: 15px;
+}
+
+header nav{
+    flex-basis: 100%;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header nav ul li{
+    flex-basis: 50%;
+}

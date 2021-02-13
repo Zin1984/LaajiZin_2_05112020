@@ -7,23 +7,31 @@
 }
 
 body{
-    font-family : /* A mettre */;
+    font-family : Arial Narrow Bold';
 }
 
 h1{
-    font-size: /* A mettre */;
+    font-size: 1 em;
+    align-content: center;
+    font-family: arial narrow bold;
 }
 
 h2{
-    font-size: /* A mettre */;
+    font-size: 1 em;
+    align-items:flex-start;
+    font-family: Arial Narrow bold;
+    
 }
 
 h3{
-    font-size: /* A mettre */;
+    font-size: 1 em;
+    align-content: center;
+    font-family:'Arial Narrow Bold';
+
 }
 
 h4{
-    font-size: /* A mettre */;
+    font-size: 1 em;
 }
 /**********************/
 /*******PROVISOIRE*****/

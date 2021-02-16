@@ -8,8 +8,11 @@
 
 body{
     font-family : Arial Narrow Bold';
+    
 }
-
+section{
+    padding: 25px ;
+}
 h1{
     font-size: 1 em;
     align-content: center;
@@ -78,3 +81,45 @@ header nav ul{
 header nav ul li{
     flex-basis: 50%;
 }
+#filters ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#mostpopular{
+    display: flex;
+    flex-direction: column;
+}
+#mostpopular h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#mostpopular article a{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+
+}
+#mostpopular article a figure{
+    flex-basis: 40%;
+}
+#mostpopular article a figure img{
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+#mostpopular article a >div{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+}
+#mostpopular article a >div ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+    

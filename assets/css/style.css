@@ -1,22 +1,27 @@
 /**********************/
 /*******GENERAL*****/
 /**********************/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     box-sizing: border-box;
 }
 
 body{
-    font-family : Arial Narrow Bold';
+    font-family: "Raleway", "Sans serif";
+    margin: 0;  
     
 }
 section{
-    padding: 25px ;
+    padding: 0 0 25px 0 ;
 }
 h1{
     font-size: 1 em;
     align-content: center;
-    font-family: arial narrow bold;
+    
+}
+p{
+    margin-bottom: 25px;
 }
 
 h2{
@@ -49,38 +54,153 @@ img{
 /**********************/
 /*******HEADER*********/
 /**********************/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
+}
 
-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+a {
+    color: blue;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ header {
+    display: grid;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-header img{
-    margin-left: 15px;
-}
-
-header > a{
-    margin-right: 15px;
-}
-
-header nav{
-    flex-basis: 100%;
-}
-
-header nav ul{
+    max-width: 1440px;
+    margin: 0% 6%;
+  }
+ 
+ 
+  header ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    grid-area: navbar;
+    list-style-type: none;
+  }
+  header nav ul li {
+      
+    padding: 1rem;
+    font-weight: 500;
     text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+  }
+  header nav ul li a [data-active=true] {
+    color: #0065FC;
+  }
+  header nav ul li:hover {
+    color: #0065FC;
+  }
+  header a {
+    display: flex;
+    align-items: center;
+    grid-area: button;
+    padding: 1rem;
+    color: #0065FC;
+    font-weight: 600;
+  }
+  
+  header img {
+    grid-area: logo;
+    order: 0;
+  }
+  .headerSignup {
+    order: 1;
+    grid-area: button
+  }
+  header nav {
+    order: 2;
+    grid-area: navbar;
+  }
+  @media screen and (min-width: 600px) {
+    
+    .searchFormSubmitinputText {
+        display: block;
+      }
+      .search_icon{
+        display: none !important;
+      }
+  
+  }
+  
+  @media screen and (max-width: 601px) {
+    
+    .searchFormSubmitinputText {
+        display: none;
+      }
+      .search_icon{
+        display: block;
+      }
+  
+  }
+
+  @media screen and (min-width: 600px) {
+    header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+    }
+  
+  }
+  @media screen and (max-width: 600px) {
+    header {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "logo . button" " navbar navbar navbar";
+    }
+    
+  }
+
+#search_bar{
+    margin-left: 6%;
+    
+}
+.icon_search{
+    display: inline-block;
+    padding: 19px 22px ;
+    border-radius: 12px 0 0 12px;
+    background-color:#F2F2F2;   
+
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+#search_bar h1 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#search_bar input{
+    padding: 18px 20px  ; 
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    box-sizing: border-box;
+    font-size: 1rem;
+   
 }
 
-header nav ul li{
-    flex-basis: 50%;
+#search_bar button{
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 19px 20px  ;
+  border-radius: 0 12px 12px 0;
+  
 }
+
 #filters ul{
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +218,7 @@ header nav ul li{
 #mostpopular article a{
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-color:blue;
 
 }
 #mostpopular article a figure{
@@ -114,12 +234,49 @@ header nav ul li{
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
-    background-color: crimson;
+    background-color: grey;
 }
 #mostpopular article a >div ul{
     display: flex;
     flex-direction: row;
     margin-top: auto;
+}
+
+#accomodation{
+    display: flex;
+    flex-direction: column;
+}
+#accomodation h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#accomodation article a{
+    display: flex;
+    flex-direction: row;
+    background-color:blue;
+
+}
+#accomodation article a figure{
+    flex-basis: 40%;
+}
+#accomodation article a figure img{
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+#accomodation article a >div{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+#accomodation article a >div ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+
 }
 
     

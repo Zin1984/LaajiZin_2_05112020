@@ -1,48 +1,130 @@
-header{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
+}
+
+ header{
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0% 2%;
+    
+    }
+
+   header ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 400%;
+    color: blue;
+         
   }
-header img{
-  margin-left: 20px;
-}
-header >a{
-  margin-right: 20px;
-}
-header nav{
+
+  header nav {
+    display:flex;
+    flex-direction: row;
+    order: 0;
+  }
+  header nav ul li{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    font-weight: 500;
+    order: 2;
+    color: blue;
+   
+  }
+  header nav ul li a{
+    display: flex;
+    flex-direction: row;
+    color:blue;
+     }
+    header  >a{
+    display: flex;
+    flex-direction:row;
+    margin-left: 67%;
+    padding: 1rem;
+    color: #0065FC;
+    font-weight: 600; 
+    order: 3;
+   
+  }
+
+#search_bar{
   display: flex;
-  flex-basis: 100%;
+  flex-direction: column;
+  margin-left: 6%;
+  margin-top: 5%;
+    
 }
-header nav ul{
-  display: flex;
-  flex-direction:row;
+.icon_search{
+    display: inline-block;
+    padding: 19px 22px ;
+    border-radius: 12px 0 0 12px;
+    background-color:#F2F2F2;   
+
 }
-header nav ul li{
-  flex-basis: 50%;
-  text-align: center;  
+form{
+    display: block;
+    margin-top: 0em;
 }
-header nav ul li a {
-  color: #0065FC;
+#search_bar h1 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
-header > a {
-  color:blue;
+#search_bar input{
+    padding: 18px 20px  ; 
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    box-sizing: border-box;
+    font-size: 1rem;
+   
 }
-header nav {
-display: flex;
-flex-wrap: wrap;
-margin-bottom: 5%;
+
+main section p{
+  margin-bottom: 2%;;
 }
-header nav ul li{
-  margin-right: 20px;
- }
- header ul{
-  display: flex;
-  align-items: center;
- }
- header nav{
-   display:flex;
-   justify-content: center;
- }
+
+#search_bar button{
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 19px 20px  ;
+  border-radius: 0 12px 12px 0;
+  
+}
+
+
+/* exo exo exo exo  */
+/* exo exo exo exo  */
+/* exo exo exo exo  */
+
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 10px; 
+    min-width: 40px; 
+} 
+  
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+} 

@@ -8,8 +8,8 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 1440px;
-    margin: 0% 2%;
-    
+    margin: 2%;
+    flex-flow: ;
     }
 
    header ul{
@@ -17,8 +17,7 @@ body {
     flex-direction: row;
     margin-left: 400%;
     color: blue;
-         
-  }
+    }
 
   header nav {
     display:flex;
@@ -53,8 +52,9 @@ body {
 #search_bar{
   display: flex;
   flex-direction: column;
-  margin-left: 6%;
+  margin-left: 2%;
   margin-top: 5%;
+  margin-bottom: 2%;
     
 }
 .icon_search{
@@ -71,10 +71,7 @@ form{
 #search_bar h1 {
     display: block;
     font-size: 1.5em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-top: 0%;
     font-weight: bold;
 }
 #search_bar input{
@@ -89,7 +86,8 @@ form{
 }
 
 main section p{
-  margin-bottom: 2%;;
+  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 #search_bar button{
@@ -103,28 +101,3 @@ main section p{
   border-radius: 0 12px 12px 0;
   
 }
-
-
-/* exo exo exo exo  */
-/* exo exo exo exo  */
-/* exo exo exo exo  */
-
-.input-icons i { 
-    position: absolute; 
-} 
-  
-.input-icons { 
-    width: 100%; 
-    margin-bottom: 10px; 
-} 
-  
-.icon { 
-    padding: 10px; 
-    min-width: 40px; 
-} 
-  
-.input-field { 
-    width: 100%; 
-    padding: 10px; 
-    text-align: center; 
-} 

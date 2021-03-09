@@ -2,6 +2,8 @@
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
+  width: 400px;
+  max-width: 576px;
 }
 
  header {
@@ -21,11 +23,10 @@ body {
     flex-direction: row;
     list-style-type: none;
     text-align: center;
-    margin-left: -20px;      
+     
   }
   header nav ul li{
   flex-basis: 50%;
-  justify-content: space-around;
   font-size: 17px;
   border-bottom: 3px #f2f2f2 solid;
   padding: 0.9rem;
@@ -45,13 +46,9 @@ body {
   }
   header nav ul li a:hover{
     color:#0065FC;
-    
-    
   }
   
   header > a {
-    display: flex;
-    align-items: center;
     color: #277dfc;
     font-weight: 600;
     margin-right: 10%;
@@ -77,6 +74,7 @@ body {
 form{
     display: block;
     margin-top: 0em;
+
 }
 #search_bar h1 {
     display: block;
@@ -95,9 +93,16 @@ form{
     border-bottom: #F2F2F2 1px solid;
     box-sizing: border-box;
     font-size: 1rem;
-   
 }
 
+#search_bar form input::placeholder{
+  font-weight: bold;
+  color: #202020;
+  font-size: 20px;
+}
+#search_bar button span{
+  display: none;
+}
 #search_bar button{
   background-color: #0065FC;
   color: white;
@@ -106,8 +111,7 @@ form{
   font-size: 1rem;
   cursor: pointer;
   padding: 19px 20px  ;
-  border-radius: 0 12px 12px 0;
-  
+  border-radius: 12px;
 }
 
 #filters ul  {
@@ -115,22 +119,22 @@ form{
   list-style-type: none;
   text-decoration: none;
   flex-wrap: wrap;
+  margin-left: -50px;
+  margin-top: -10px;
 }
 #filters p i {
-  
-  background-color:#DEEBFF ;
-  padding: 10px 14px;
+  border: 1px #d9d9d9 solid;
+  padding: 3px 8px;
   border-radius: 100%;
   margin-right: 12px;
-  color: blue;
+  color:#0065fc;
+  font-size: 14px;
 }
 #filters  ul li{
- 
-  margin-right: 23px;
+  margin: 7px;
   border: 1px rgb(211, 200, 200) solid;
-  padding: 12px;
+  padding: 10px;
   border-radius: 50px;
-  
 }
 
 #filters ul li strong{
@@ -140,15 +144,16 @@ form{
 #filters  ul li i{
   border-radius: 100%;
   background-color:  #DEEBFF;
-  padding: 25px;
-  margin: -16px;
-  color: blue;
-  
+  padding: 20px;
+  margin: -12px;
+  color: #0065fc;
 }
+
 #filters {
 display:inline-flex;
 margin: 10px 10px;
 justify-content: flex-start;
+flex-wrap: wrap;
 
 }
 #filters > h2{

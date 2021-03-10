@@ -2,8 +2,6 @@
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
-  width: 400px;
-  max-width: 576px;
 }
 
  header {
@@ -162,4 +160,75 @@ flex-wrap: wrap;
 } 
 #filters {
   margin-left: 6%;
+}
+#mostpopular{
+  background-color: #f2f2f2;
+}
+#mostpopular h2{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6%;
+  padding-top: 7%;
+  
+}
+#mostpopular h2 i{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+#mostpopular article{
+  border: 5px white solid;
+  border-radius: 15px;
+  margin: 15px 40px;
+  width: 450px;
+  height: 190px;
+  background-color: white;
+  
+
+}
+#mostpopular article div ul li i {
+  color:#0065fc;
+}
+#mostpopular article div ul li
+{
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-flex; 
+ 
+  
+}
+#mostpopular article a figure img{
+  border-radius: 15px 0 0 15px;
+  width: 200px;
+  height: 190px;
+  object-fit: cover;
+  font-size: 100%;
+  margin-left:-20% ;
+  margin-top: -17px;
+  
+  
+}
+#mostpopular article a{
+  display: flex;
+  flex: wrap;
+}
+#mostpopular article div ul
+{
+  margin-left: -40px;
+}
+#mostpopular article a div{
+  display: flex;
+  flex-direction: column;
+  
+}
+#mostpopular article a div h3{
+  display: flex;
+  flex-direction: row;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+#mostpopular article a div p{
+  color: black;
+  text-decoration: none;
 }

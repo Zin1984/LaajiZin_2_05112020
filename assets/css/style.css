@@ -211,6 +211,7 @@ flex-wrap: wrap;
 #mostpopular article a{
   display: flex;
   flex: wrap;
+  text-decoration: none;
 }
 #mostpopular article div ul
 {

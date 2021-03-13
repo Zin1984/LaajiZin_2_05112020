@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
+}
+section{
+  padding: 20px;
 }
 
  header {
@@ -121,28 +127,25 @@ form{
   list-style-type: none;
   text-decoration: none;
   flex-wrap: wrap;
-  margin-top: -10px;
-
 }
 #filters p i {
-  border: 1px #d9d9d9 solid;
-  padding: 5px 8px;
-  border-radius: 100%;
-  margin-right: 12px;
-  color:#0065fc;
-  font-size: 14px;
-  margin-top: 10px;
+border: 1px #d9d9d9 solid;
+ border-radius: 100%;
+ color:#0065fc;
+ 
+
 }
+/* 
 #filters  ul li{
   margin: 7px;
   border: 1px rgb(211, 200, 200) solid;
   padding: 10px;
   border-radius: 50px;
   font-weight: bold;
-}
+} */
 
 #filters ul li strong{
-  padding-left:25px ;
+  padding: 0 15px;
 }
 
 #filters  ul li i{
@@ -151,29 +154,16 @@ form{
   padding: 15px;
   margin: -12px;
   color: #0065fc;
-  font-size: 130%;
+  font-size: 1.3em;
 }
 
-#filters {
-display:inline-flex;
-margin: 10px 10px;
-justify-content: flex-start;
-flex-wrap: wrap;
-
-}
 #filters > h2{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   margin-bottom: 10px;
-  margin-top: 29px;
+  margin-top: 30px;
   font-weight: bold;
-  font-size: 140%;
+  font-size: 1.4em;
  
 } 
-#filters {
-  margin-left: 6%;
-}
 #mostpopular{
   background-color: #f2f2f2;
 }
@@ -183,7 +173,7 @@ flex-wrap: wrap;
   margin-left: 7%;
   padding-top: 7%;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 1.5em;
 }
 #mostpopular h2 i{
   display: flex;
@@ -214,14 +204,13 @@ flex-wrap: wrap;
   list-style-type: none;
   text-decoration: none;
   display: inline-flex; 
-  font-size: 90%;
+ 
 }
 #mostpopular article a figure img{
   border-radius: 15px 0 0 15px;
   width: 200px;
   height: 170px;
   object-fit: cover;
-  font-size: 100%;
 }
 #mostpopular article a{
   display: flex;
@@ -246,7 +235,7 @@ flex-wrap: wrap;
   text-decoration: none;
   list-style: none;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 1.5em;
 }
 #mostpopular article a div p{
   color: black;
@@ -261,7 +250,7 @@ flex-wrap: wrap;
   padding-top: 7%;
   padding-bottom: 7%;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 1.5em;
 }
 #accommodation article{
   border: 7px white solid;
@@ -283,7 +272,7 @@ flex-wrap: wrap;
 #accommodation article div h3{
   font-weight: bold;
   text-decoration: none;
-  font-size: 150%;
+  font-size: 1.5em;
   color: black;
   margin-left:4% ;
   margin-top: 4%;
@@ -302,7 +291,6 @@ flex-wrap: wrap;
   list-style-type: none;
   text-decoration: none;
   display: inline-flex; 
-  font-size: 90%;
   margin-top: 2%;
   margin-bottom: 2%;
   color: #277dfc;
@@ -320,7 +308,7 @@ flex-wrap: wrap;
 #accommodation > a{
   font-weight: bold;
   margin-left: 7%;
-  font-size: 150%;
+  font-size: 1.5em;
   color: black; 
 }
 
@@ -329,7 +317,7 @@ flex-wrap: wrap;
 #activity article figcaption h3{
   color: black;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 1.5em;
   margin-left: 7%;
   margin-top: 2%;
   margin-bottom: 6%;

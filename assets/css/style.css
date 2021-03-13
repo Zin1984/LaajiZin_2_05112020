@@ -76,10 +76,19 @@ section{
 
 }
 form{
-    display: block;
+    display: flex;
     margin-top: 0em;
+    height: 3em;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+
 
 }
+#search_bar form i{
+  text-align: center;
+  width: 3em;
+}
+
 #search_bar h1 {
     display: block;
     font-size: 1.5em;
@@ -90,13 +99,10 @@ form{
     font-weight: bold;
 }
 #search_bar input{
-    padding: 16px 14px  ; 
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    box-sizing: border-box;
-    font-size: 1rem;
+    width: 50%;
+    height: 100%;
+    padding: 0 1em;
+
 }
 
 #search_bar form input::placeholder{
@@ -112,9 +118,9 @@ form{
   color: white;
   font-weight: bold;
   border: none;
-  font-size: 1rem;
   cursor: pointer;
-  padding: 17px 18px  ;
+  line-height: 3em;
+  text-align: center;
   border-radius: 12px;
 }
 

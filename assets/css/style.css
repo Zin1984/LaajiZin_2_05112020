@@ -68,25 +68,21 @@ section{
     margin-bottom: 30px;
   }
   
-.icon_search{
-    display: inline-block;
-    padding: 19px 18px ;
-    border-radius: 12px 0 0 12px;
-    background-color:#F2F2F2;   
-
-}
 form{
     display: flex;
     margin-top: 0em;
     height: 3em;
     align-items: center;
     border: 1px solid #F2F2F2;
-
+    border-radius: 12px;
 
 }
-#search_bar form i{
+#search_bar form label i{
   text-align: center;
   width: 3em;
+  border-radius: 12px 0 0 12px;
+  background-color:#F2F2F2;  
+ line-height: 3em;
 }
 
 #search_bar h1 {
@@ -99,10 +95,15 @@ form{
     font-weight: bold;
 }
 #search_bar input{
-    width: 50%;
-    height: 100%;
-    padding: 0 1em;
-
+  font-family: inherit;
+  border: 0;
+  height: 100%;
+  width: 50%;
+  padding: 0 1em;
+  margin-right: -1em;
+  font-size: 1.1em;
+  font-weight: bold;
+  flex: 1;
 }
 
 #search_bar form input::placeholder{
@@ -114,14 +115,14 @@ form{
   display: none;
 }
 #search_bar button{
-  background-color: #0065FC;
-  color: white;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  line-height: 3em;
+  background-color: #0065fc;
   text-align: center;
-  border-radius: 12px;
+  border: 0;
+  line-height: 3em;
+  border-radius: 1em;
+  color: #ffffff;
+  font-size: 1em;
+  flex: 0 0 3em;
 }
 
 #filters ul  {
@@ -135,9 +136,9 @@ form{
   line-height: 1.5em;
 }
 #filters p i {
- border: 1px #d9d9d9 solid;
- border-radius: 100%;
- color:#0065fc;
+border: 1px #d9d9d9 solid;
+border-radius: 100%;
+color:#0065fc;
 line-height: 1.5em;
 height: 1.5em;
 width: 1.5em;
@@ -242,8 +243,7 @@ margin-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 12px 0 12px 14px;
-  
+  margin: 12px 0 12px 14px; 
 }
 #mostpopular article a div h3{
   display: flex;
@@ -328,8 +328,6 @@ margin-right: 15px;
   font-size: 1.5em;
   color: black; 
 }
-
-
 
 #activity article figcaption h3{
   color: black;

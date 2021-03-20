@@ -3,17 +3,16 @@
 /*******************GENERAL*********************/
 /**********************************************/
 
-*{
+* {
   box-sizing: border-box;
 }
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
-section{
+section {
   padding: 20px;
 }
-
 
 /***********************************************/
 /*******************HEADER*********************/
@@ -42,42 +41,42 @@ header nav {
   flex-basis: 100%;
   margin-top: 12px;
 }
- 
-header nav ul{
+
+header nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   text-align: center;
 }
 
-header nav ul li{
+header nav ul li {
   flex-basis: 50%;
   font-size: 1em;
   border-bottom: 3px #f2f2f2 solid;
   padding: 0.9rem;
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
   border-bottom: 3px solid;
-  color:#0065FC;
+  color: #0065fc;
 }
 
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
-  font-weight: 600; 
+  font-weight: 600;
   color: black;
   padding: 1rem;
 }
 
-header nav ul li a:hover{
-  color:#0065FC;
+header nav ul li a:hover {
+  color: #0065fc;
 }
 
 /***********************************************/
 /*******************SEARCH BAR******************/
 /**********************************************/
 
-#search_bar p{
+#search_bar p {
   margin-bottom: 30px;
 }
 
@@ -91,24 +90,24 @@ header nav ul li a:hover{
   font-weight: bold;
 }
 
-#search_bar form{
-    display: flex;
-    margin-top: 0em;
-    height: 3em;
-    align-items: center;
-    border: 1px solid #F2F2F2;
-    border-radius: 12px;
+#search_bar form {
+  display: flex;
+  margin-top: 0em;
+  height: 3em;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
 }
 
-#search_bar form label i{
+#search_bar form label i {
   text-align: center;
   width: 3em;
   border-radius: 12px 0 0 12px;
-  background-color:#F2F2F2;  
- line-height: 3em;
+  background-color: #f2f2f2;
+  line-height: 3em;
 }
 
-#search_bar form input{
+#search_bar form input {
   font-family: inherit;
   border: 0;
   height: 100%;
@@ -119,19 +118,19 @@ header nav ul li a:hover{
   font-weight: bold;
   flex: 1;
 }
-#search_bar form input:focus{
+#search_bar form input:focus {
   outline: none;
 }
-#search_bar form input::placeholder{
+#search_bar form input::placeholder {
   font-weight: bold;
   color: #202020;
   font-size: 20px;
-  opacity:1;
+  opacity: 1;
 }
-#search_bar form button span{
+#search_bar form button span {
   display: none;
 }
-#search_bar form button{
+#search_bar form button {
   background-color: #0065fc;
   text-align: center;
   border: 0;
@@ -142,19 +141,18 @@ header nav ul li a:hover{
   flex: 0 0 3em;
 }
 
-
 /***********************************************/
 /*******************FILTERS********************/
 /**********************************************/
 
-#filters > h2{
+#filters > h2 {
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: bold;
   font-size: 1.4em;
 }
 
-#filters p{
+#filters p {
   display: flex;
   line-height: 1.5em;
 }
@@ -162,7 +160,7 @@ header nav ul li a:hover{
 #filters p i {
   border: 1px #d9d9d9 solid;
   border-radius: 100%;
-  color:#0065fc;
+  color: #0065fc;
   line-height: 1.5em;
   height: 1.5em;
   width: 1.5em;
@@ -171,31 +169,31 @@ header nav ul li a:hover{
   margin-right: 15px;
 }
 
-#filters ul  {
+#filters ul {
   display: flex;
   list-style-type: none;
   text-decoration: none;
   flex-wrap: wrap;
 }
 
-#filters  ul li{
+#filters ul li {
   margin-right: 15px;
   border: 1px rgb(211, 200, 200) solid;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   border-radius: 50px;
   font-weight: bold;
 }
-#filters ul li:hover{
-  background-color:#DEEBFF ;
+#filters ul li:hover {
+  background-color: #deebff;
 }
 
-#filters ul li strong{
+#filters ul li strong {
   padding: 0 15px;
 }
 
-#filters ul li i{
+#filters ul li i {
   border-radius: 100%;
-  background-color:  #DEEBFF;
+  background-color: #deebff;
   color: #0065fc;
   font-size: 1.3em;
   height: 2.3em;
@@ -209,188 +207,188 @@ header nav ul li a:hover{
 /*****************MOST POPULAR*****************/
 /**********************************************/
 
-#mostpopular{
+#mostpopular {
   background-color: #f2f2f2;
 }
-#mostpopular h2{
+#mostpopular h2 {
   display: flex;
   justify-content: space-between;
-  margin-left: 7%;
   padding-top: 7%;
   font-weight: bold;
   font-size: 1.5em;
 }
-#mostpopular h2 i{
+#mostpopular h2 i {
   display: flex;
   justify-content: flex-end;
   margin-right: 3%;
   margin-bottom: 2%;
 }
 
-#mostpopular article{
+#mostpopular article {
   border: 5px white solid;
   border-radius: 15px;
-  margin: 15px 40px;
-  width: 450px;
   height: 170px;
   background-color: white;
 }
 
-#mostpopular article a{
+#mostpopular article a {
   display: flex;
-  flex: wrap;
   text-decoration: none;
+  flex-direction: row;
+  height: 100%;
+}
+#mostpopular article a figure{
+  height: 100%;
+  flex-basis: 55%;
 }
 
-#mostpopular article a figure img{
+#mostpopular article a figure img {
   border-radius: 15px 0 0 15px;
-  width: 200px;
-  height: 170px;
+  width: 100%;
+  height: 1OO%;
+  max-width: 100%;
   object-fit: cover;
 }
 
-#mostpopular article a div{
+#mostpopular article a div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 12px 0 12px 14px;
+  flex-basis: 45%;
+
+
 }
 
-#mostpopular article a div h3{
+#mostpopular article a div h3 {
   display: flex;
   flex-direction: row;
   color: black;
   text-decoration: none;
   list-style: none;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
-#mostpopular article a div p{
+#mostpopular article a div p {
   color: black;
   text-decoration: none;
 }
 
 #mostpopular article div ul {
-  margin-left: 4px;
+ margin-top: auto;
 }
 
 #mostpopular article div ul li {
   list-style-type: none;
   text-decoration: none;
-  display: inline-flex;
 }
 
-#mostpopular article div ul li i{
-  color: #0065FC;
+#mostpopular article div ul li i {
+  color: #0065fc;
 }
-#mostpopular article div ul li i[data-active=false] {
-  color:rgb(245, 239, 239)
+#mostpopular article div ul li i[data-active="false"] {
+  color: rgb(245, 239, 239);
 }
-
 
 /***********************************************/
 /*****************MOST POPULAR*****************/
 /**********************************************/
 
-#accommodation{
-  background-color: white ;
+#accommodation {
+  background-color: white;
   margin-bottom: 50px;
 }
-#accommodation h2{
+#accommodation h2 {
   margin-left: 6%;
   padding-top: 7%;
   padding-bottom: 7%;
   font-weight: bold;
   font-size: 1.5em;
 }
-#accommodation > a{
+#accommodation > a {
   font-weight: bold;
   margin-left: 7%;
   font-size: 1.5em;
   color: black;
 }
 
-#accommodation article{
+#accommodation article {
   border: 7px white solid;
   border-radius: 14px;
   width: 90%;
-  height:30%;
+  height: 30%;
   margin-left: 5%;
   margin-right: 5%;
   box-shadow: 0 0 20px #0000002e;
   margin-bottom: 15px;
 }
 
-#accommodation article figure img{
+#accommodation article figure img {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-#accommodation article div{
+#accommodation article div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
 }
 
-#accommodation article div h3{
+#accommodation article div h3 {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.5em;
   color: black;
-  margin-left:4% ;
+  margin-left: 4%;
   margin-top: 4%;
 }
 
-#accommodation article div p{
+#accommodation article div p {
   text-decoration: none;
   color: black;
-  margin-left:4% ;
+  margin-left: 4%;
   margin-top: 2%;
 }
 
-#accommodation article div p > strong{
+#accommodation article div p > strong {
   font-weight: bold;
 }
 
-#accommodation article div ul{
-  margin-left:4%;
+#accommodation article div ul {
+  margin-left: 4%;
 }
 
-#accommodation article div ul li{
+#accommodation article div ul li {
   list-style-type: none;
   text-decoration: none;
-  display: inline-flex; 
+  display: inline-flex;
   margin-top: 2%;
   margin-bottom: 2%;
   color: #277dfc;
-  
 }
-
 
 /***********************************************/
 /*******************ACTIVITY*******************/
 /**********************************************/
-#activity{
-  background-color: white ;
+#activity {
+  background-color: white;
   margin-bottom: 50px;
 }
 
-#activity article{
-  border:0.4px white solid;
+#activity article {
+  border: 0.4px white solid;
   border-radius: 14px;
   width: 90%;
-  height:30%;
+  height: 30%;
   margin-left: 5%;
   margin-right: 5%;
   box-shadow: 0 0 20px #0000002e;
   margin-bottom: 15px;
 }
 
-#activity article figcaption h3{
+#activity article figcaption h3 {
   color: black;
   font-weight: bold;
   font-size: 1.5em;
@@ -399,7 +397,7 @@ header nav ul li a:hover{
   margin-bottom: 6%;
 }
 
-#activity article a figure img{
+#activity article a figure img {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
   height: 200px;
@@ -407,30 +405,29 @@ header nav ul li a:hover{
   margin-bottom: 12px;
 }
 
-
 /***********************************************/
 /*******************ACTIVITY*******************/
 /**********************************************/
 
-footer{
-  diplay:flex;
+footer {
+  diplay: flex;
   flex-direction: column;
   background-color: #f2f2f2;
 }
-footer h3{
+footer h3 {
   margin-left: 20px;
   margin-top: 5%;
   margin-bottom: 5%;
   font-weight: bold;
-  padding-top: 5%; 
+  padding-top: 5%;
 }
 footer ul {
   margin-left: 20px;
   margin-bottom: -3%;
 }
-footer ul li{
+footer ul li {
   padding-bottom: 3%;
 }
-footer ul li a{
+footer ul li a {
   color: black;
 }

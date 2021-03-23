@@ -327,7 +327,7 @@ header nav ul li a:hover {
   height: 100%;
 }
 #accommodation article figure{
-  height: 60%;
+  height: 50%;
 }
 
 #accommodation article figure img {
@@ -368,8 +368,10 @@ header nav ul li a:hover {
   text-decoration: none;
   display: inline-flex;
   margin-top: 2%;
-  margin-bottom: 2%;
-  color: #277dfc;
+  color: #0065fc;
+}
+#accommodation article div ul li i[data-active="false"]{
+  color:  rgb(245, 239, 239);
 }
 
 /***********************************************/
@@ -423,17 +425,16 @@ footer {
   diplay: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-bottom: 5%;
 }
 footer h3 {
-  margin-left: 20px;
   margin-top: 5%;
-  margin-bottom: 5%;
   font-weight: bold;
   padding-top: 5%;
 }
 footer ul {
-  margin-left: 20px;
-  margin-bottom: -3%;
+margin-top: 3%;
 }
 footer ul li {
   padding-bottom: 3%;

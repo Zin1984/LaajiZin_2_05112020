@@ -300,6 +300,7 @@ header nav ul li a:hover {
 #accommodation {
   background-color: white;
   margin-bottom: 50px;
+  margin-left: 5%;
 }
 #accommodation h2 {
   padding-top: 7%;
@@ -309,9 +310,9 @@ header nav ul li a:hover {
 }
 #accommodation > a {
   font-weight: bold;
-  margin-left: 7%;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color:black;
+  margin-top: 5em;
 }
 
 #accommodation article {

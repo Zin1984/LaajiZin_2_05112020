@@ -13,6 +13,14 @@ body {
 section {
   padding: 20px;
 }
+article div ul li i[data-active="true"]{
+  font-size: 0.8em;
+  color: #0065fc;
+}
+article div ul li i[data-active="false"]{
+  color:  rgb(245, 239, 239);
+  font-size: 0.8em;
+}
 
 /***********************************************/
 /*******************HEADER*********************/
@@ -52,23 +60,22 @@ header nav ul {
 header nav ul li {
   flex-basis: 50%;
   font-size: 1em;
-  border-bottom: 3px #f2f2f2 solid;
+  border-bottom: 3px solid #f2f2f2;
   padding: 0.9rem;
 }
 
 header nav ul li:hover {
-  border-bottom: 3px solid;
-  color: #0065fc;
+  border-bottom: 3px solid #0065fc;
 }
 
 header nav ul li a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: black;
   padding: 1rem;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover a {
   color: #0065fc;
 }
 
@@ -226,9 +233,8 @@ header nav ul li a:hover {
 }
 
 #mostpopular article {
-  padding: 5px;
   border-radius: 15px;
-  height: 170px;
+  height: 150px;
   background-color: white;
   margin-bottom: 15px;
 }
@@ -238,6 +244,7 @@ header nav ul li a:hover {
   text-decoration: none;
   flex-direction: row;
   height: 100%;
+  padding: 5px;
 }
 #mostpopular article a figure{
   height: 100%;
@@ -256,7 +263,7 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   flex-basis: 45%;
-  padding: 15px 0 15px 20px;
+  padding: 10px 0 10px 20px;
 }
 
 #mostpopular article a div h3 {
@@ -286,12 +293,6 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-#mostpopular article div ul li i {
-  color: #0065fc;
-}
-#mostpopular article div ul li i[data-active="false"] {
-  color: rgb(245, 239, 239);
-}
 
 /***********************************************/
 /*****************ACCOMODATION*****************/
@@ -300,7 +301,6 @@ header nav ul li a:hover {
 #accommodation {
   background-color: white;
   margin-bottom: 50px;
-  margin-left: 5%;
 }
 #accommodation h2 {
   padding-top: 7%;
@@ -316,9 +316,8 @@ header nav ul li a:hover {
 }
 
 #accommodation article {
-  padding: 5px;
   border-radius: 15px;
-  height: 200px;
+  height: 220px;
   box-shadow: 0 0 20px #0000002e;
   margin-bottom: 15px;
 }
@@ -326,9 +325,10 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 5px;
 }
 #accommodation article figure{
-  height: 50%;
+  height: 60%;
 }
 
 #accommodation article figure img {
@@ -344,7 +344,7 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 45%;
-  padding: 15px 0 15px 20px;
+  padding: 10px 0 10px 20px;
   }
 
 #accommodation article div h3 {
@@ -370,9 +370,6 @@ header nav ul li a:hover {
   display: inline-flex;
   margin-top: 2%;
   color: #0065fc;
-}
-#accommodation article div ul li i[data-active="false"]{
-  color:  rgb(245, 239, 239);
 }
 
 /***********************************************/

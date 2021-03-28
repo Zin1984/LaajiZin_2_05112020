@@ -10,7 +10,7 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
-section {
+section,footer {
   padding: 20px;
 }
 article div ul li i[data-active="true"]{
@@ -300,7 +300,7 @@ header nav ul li:hover a {
 
 #accommodation {
   background-color: white;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 #accommodation h2 {
   padding-top: 7%;
@@ -383,9 +383,8 @@ header nav ul li:hover a {
 }
 
 #activity article {
-  border: 0.4px white solid;
-  border-radius: 14px;
-  height: 170px;
+  border-radius: 15px;
+  height: 200px;
   box-shadow: 0 0 20px #0000002e;
   margin-bottom: 15px;
 }
@@ -393,17 +392,24 @@ header nav ul li:hover a {
 #activity article figcaption h3 {
   color: black;
   font-weight: bold;
-  font-size: 1.5em;
-  margin-left: 7%;
-  margin-top: 2%;
-  margin-bottom: 6%;
+  font-size: 1.2em;
+  padding-left: 1rem;
+ 
+}
+#activity article figcaption{
+  flex: 0 0 55px;
+  display: flex;
+  align-items: center;
 }
 
 #activity article a figure img {
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 9px 9px 0 0;
   width: 100%;
   object-fit: cover;
+  height: 100%;
+  max-height: 100%;
 }
+
 #activity h2{
   font-size: 1.5em;
   font-weight: bold;
@@ -411,6 +417,12 @@ header nav ul li:hover a {
 }
 #activity article figure{
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#activity article figure div{
+  flex: 1;
+  height: 40%;
 }
 
 /***********************************************/
@@ -421,8 +433,6 @@ footer {
   diplay: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding-left: 20px;
-  padding-bottom: 5%;
 }
 footer h3 {
   margin-top: 5%;

@@ -63,7 +63,42 @@ header nav ul li {
   border-bottom: 3px solid #f2f2f2;
   padding: 0.9rem;
 }
+@media screen and (min-width: 576px) {
+    
+  #search_bar form button span{
+      display: block;
+    }
+    #search_bar form button span  {
+      display: none !important;
+    }
 
+}
+
+@media screen and (max-width: 577px) {
+  
+  #search_bar form button span {
+      display: none;
+    }
+    .search_icon{
+      display: block;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  }
+
+}
+@media screen and (max-width: 576px) {
+  header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" " navbar navbar navbar";
+  }
+  
+}
 header nav ul li:hover {
   border-bottom: 3px solid #0065fc;
 }
@@ -429,21 +464,24 @@ header nav ul li:hover a {
 /*******************FOOTER*******************/
 /**********************************************/
 
-footer {
-  diplay: flex;
+
+footer div{
+  display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  margin-bottom: 1.5em;
 }
 footer h3 {
-  margin-top: 5%;
+  margin-top: 1.5em;
   font-weight: bold;
-  padding-top: 5%;
+  margin-left: 2.5em;
 }
 footer ul {
-margin-top: 3%;
+margin-top: 1em;
+margin-left: 2.5em;
 }
 footer ul li {
-  padding-bottom: 3%;
+  padding-bottom: 1em;
 }
 footer ul li a {
   color: black;

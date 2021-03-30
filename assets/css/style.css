@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+/***********************************************/
+/*******************GENERAL*********************/
+/**********************************************/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
+}
+section {
+  padding: 20px;
+}
+article div ul li i[data-active="true"]{
+  font-size: 0.8em;
+  color: #0065fc;
+}
+article div ul li i[data-active="false"]{
+  color:  rgb(245, 239, 239);
+  font-size: 0.8em;
+}
+
+/***********************************************/
+/*******************HEADER*********************/
+/**********************************************/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+header img {
+  margin-left: 15px;
+}
+
+header > a {
+  color: #277dfc;
+  font-weight: 600;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+header nav {
+  flex-basis: 100%;
+  margin-top: 12px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  text-align: center;
+}
+
+header nav ul li {
+  flex-basis: 50%;
+  font-size: 1em;
+  border-bottom: 3px solid #f2f2f2;
+  padding: 0.9rem;
+}
+@media screen and (min-width: 576px) {
+    
+  #search_bar form button span{
+      display: block;
+    }
+    #search_bar form button span  {
+      display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 577px) {
+  
+  #search_bar form button span {
+      display: none;
+    }
+    .search_icon{
+      display: block;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  }
+
+}
+@media screen and (max-width: 576px) {
+  header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" " navbar navbar navbar";
+  }
+  
+}
+header nav ul li:hover {
+  border-bottom: 3px solid #0065fc;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  padding: 1rem;
+}
+
+header nav ul li:hover a {
+  color: #0065fc;
+}
+
+/***********************************************/
+/*******************SEARCH BAR******************/
+/**********************************************/
+
+#search_bar p {
+  margin-bottom: 30px;
+}
+
+#search_bar h1 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#search_bar form {
+  display: flex;
+  margin-top: 0em;
+  height: 3em;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  max-width: 350px;
+}
+
+#search_bar form label i {
+  text-align: center;
+  width: 3em;
+  border-radius: 12px 0 0 12px;
+  background-color: #f2f2f2;
+  line-height: 3em;
+}
+
+#search_bar form input {
+  font-family: inherit;
+  border: 0;
+  height: 100%;
+  width: 50%;
+  padding: 0 1em;
+  margin-right: -1em;
+  font-size: 1.1em;
+  font-weight: bold;
+  flex: 1;
+}
+#search_bar form input:focus {
+  outline: none;
+}
+#search_bar form input::placeholder {
+  font-weight: bold;
+  color: #202020;
+  font-size: 20px;
+  opacity: 1;
+}
+#search_bar form button span {
+  display: none;
+}
+#search_bar form button {
+  background-color: #0065fc;
+  text-align: center;
+  border: 0;
+  line-height: 3em;
+  border-radius: 1em;
+  color: #ffffff;
+  font-size: 1em;
+  flex: 0 0 3em;
+}
+
+/***********************************************/
+/*******************FILTERS********************/
+/**********************************************/
+
+#filters > h2 {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+#filters p {
+  display: flex;
+  line-height: 1.5em;
+}
+
+#filters p i {
+  border: 1px #d9d9d9 solid;
+  border-radius: 100%;
+  color: #0065fc;
+  line-height: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  min-width: 1.5em;
+  text-align: center;
+  margin-right: 15px;
+}
+
+#filters ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+#filters ul li {
+  margin-right: 15px;
+  border: 1px rgb(211, 200, 200) solid;
+  margin-bottom: 15px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+#filters ul li:hover {
+  background-color: #deebff;
+}
+
+#filters ul li strong {
+  padding: 0 15px;
+}
+
+#filters ul li i {
+  border-radius: 100%;
+  background-color: #deebff;
+  color: #0065fc;
+  font-size: 1.3em;
+  height: 2.3em;
+  width: 2.3em;
+  line-height: 2.3em;
+  text-align: center;
+  margin-left: -1px;
+}
+
+/***********************************************/
+/*****************MOST POPULAR*****************/
+/**********************************************/
+
+#mostpopular {
+  background-color: #f2f2f2;
+}
+#mostpopular h2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 7%;
+}
+#mostpopular h2 i {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+  margin-bottom: 2%;
+}
+
+#mostpopular article {
+  border-radius: 15px;
+  height: 150px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+#mostpopular article a {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  height: 100%;
+  padding: 5px;
+}
+#mostpopular article a figure{
+  height: 100%;
+  flex-basis: 55%;
+}
+
+#mostpopular article a figure img {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#mostpopular article a div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  padding: 10px 0 10px 20px;
+}
+
+#mostpopular article a div h3 {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#mostpopular article a div p {
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#mostpopular article div ul {
+ margin-top: auto;
+ display:flex;
+ flex-direction: row;
+}
+
+#mostpopular article div ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+/***********************************************/
+/*****************ACCOMODATION*****************/
+/**********************************************/
+
+#accommodation {
+  background-color: white;
+  margin-bottom: 25px;
+}
+#accommodation h2 {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#accommodation > a {
+  font-weight: bold;
+  font-size: 1.1em;
+  color:black;
+}
+
+#accommodation article {
+  border-radius: 15px;
+  height: 220px;
+  box-shadow: 0 0 20px #0000002e;
+  margin-bottom: 15px;
+}
+#accommodation article a{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 5px;
+}
+#accommodation article figure{
+  height: 60%;
+}
+
+#accommodation article figure img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#accommodation article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 45%;
+  padding: 10px 0 10px 20px;
+  }
+
+#accommodation article div h3 {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+}
+
+#accommodation article div p {
+  text-decoration: none;
+  color: black;
+  margin-top: 2%;
+}
+
+#accommodation article div p > strong {
+  font-weight: bold;
+}
+#accommodation article div ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#accommodation article div ul li {
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 2%;
+  color: #0065fc;
+}
+
+/***********************************************/
+/*******************ACTIVITY*******************/
+/**********************************************/
+#activity {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+#activity article {
+  border-radius: 15px;
+  height: 200px;
+  box-shadow: 0 0 20px #0000002e;
+  margin-bottom: 15px;
+}
+
+#activity article figcaption h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 1rem;
+ 
+}
+#activity article figcaption{
+  flex: 0 0 55px;
+  display: flex;
+  align-items: center;
+}
+
+#activity article a figure img {
+  border-radius: 9px 9px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  max-height: 100%;
+}
+
+#activity h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+#activity article figure{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#activity article figure div{
+  flex: 1;
+  height: 40%;
+}
+
+/***********************************************/
+/*******************FOOTER*******************/
+/**********************************************/
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin-top: 30px;
+}
+footer h3 {
+  font-weight: bold;
+  margin-left: 2.5em;
+}
+footer ul {
+margin-top: 1em;
+margin-left: 2.5em;
+}
+footer ul li {
+  padding-bottom: 1em;
+}
+footer ul li a {
+  color: black;
+}

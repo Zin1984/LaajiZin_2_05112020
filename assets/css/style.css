@@ -10,7 +10,7 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
-section,footer {
+section {
   padding: 20px;
 }
 article div ul li i[data-active="true"]{
@@ -464,9 +464,7 @@ header nav ul li:hover a {
 /***********************************************/
 /*******************FOOTER*******************/
 /**********************************************/
-section {
-  padding: 20px;
-}
+
 footer div{
   display: flex;
   flex-direction: column;

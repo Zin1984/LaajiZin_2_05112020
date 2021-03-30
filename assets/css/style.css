@@ -464,13 +464,13 @@ header nav ul li:hover a {
 /***********************************************/
 /*******************FOOTER*******************/
 /**********************************************/
-
-
+section {
+  padding: 20px;
+}
 footer div{
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  margin-bottom: 1.5em;
   margin-top: 30px;
 }
 footer h3 {

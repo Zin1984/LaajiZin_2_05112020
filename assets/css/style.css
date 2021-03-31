@@ -25,6 +25,9 @@ article div ul li i[data-active="false"]{
 /***********************************************/
 /*******************HEADER*********************/
 /**********************************************/
+
+@media screen and (min-width: 576px) and (max-width:768px){
+
 header {
   display: flex;
   flex-direction: row;
@@ -63,7 +66,7 @@ header nav ul li {
   border-bottom: 3px solid #f2f2f2;
   padding: 0.9rem;
 }
-@media screen and (min-width: 576px) {
+
     
   #search_bar form button span{
       display: block;
@@ -71,10 +74,6 @@ header nav ul li {
     #search_bar form button span  {
       display: none !important;
     }
-
-}
-
-@media screen and (max-width: 577px) {
   
   #search_bar form button span {
       display: none;
@@ -83,26 +82,9 @@ header nav ul li {
       display: block;
     }
 
-}
-
-@media screen and (min-width: 576px) {
-  header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
-  }
-
-}
-@media screen and (max-width: 576px) {
-  header {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo . button" " navbar navbar navbar";
-  }
-  
-}
 header nav ul li:hover {
   border-bottom: 3px solid #0065fc;
 }
-
 header nav ul li a {
   text-decoration: none;
   font-weight: 500;
@@ -484,4 +466,5 @@ footer ul li {
 }
 footer ul li a {
   color: black;
+}
 }

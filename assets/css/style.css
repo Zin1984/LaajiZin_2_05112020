@@ -26,8 +26,6 @@ article div ul li i[data-active="false"]{
 /*******************HEADER*********************/
 /**********************************************/
 
-@media screen and (min-width: 576px) and (max-width:768px){
-
 header {
   display: flex;
   flex-direction: row;
@@ -85,6 +83,7 @@ header nav ul li {
 header nav ul li:hover {
   border-bottom: 3px solid #0065fc;
 }
+
 header nav ul li a {
   text-decoration: none;
   font-weight: 500;
@@ -99,6 +98,7 @@ header nav ul li:hover a {
 /***********************************************/
 /*******************SEARCH BAR******************/
 /**********************************************/
+@media screen and (min-width: 576px) {
 
 #search_bar p {
   margin-bottom: 30px;

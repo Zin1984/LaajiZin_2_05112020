@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 /***********************************************/
 /*******************GENERAL*********************/
 /**********************************************/
@@ -63,42 +63,7 @@ header nav ul li {
   border-bottom: 3px solid #f2f2f2;
   padding: 0.9rem;
 }
-@media screen and (min-width: 576px) {
-    
-  #search_bar form button span{
-      display: block;
-    }
-    #search_bar form button span  {
-      display: none !important;
-    }
 
-}
-
-@media screen and (max-width: 577px) {
-  
-  #search_bar form button span {
-      display: none;
-    }
-    .search_icon{
-      display: block;
-    }
-
-}
-
-@media screen and (min-width: 576px) {
-  header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
-  }
-
-}
-@media screen and (max-width: 576px) {
-  header {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo . button" " navbar navbar navbar";
-  }
-  
-}
 header nav ul li:hover {
   border-bottom: 3px solid #0065fc;
 }
@@ -484,4 +449,54 @@ footer ul li {
 }
 footer ul li a {
   color: black;
+}
+@media screen and (min-width:576px){
+  #filters{
+    line-height: 2.3em;
+  }
+  #filters h2{
+    float: left;
+    margin-right:15px;
+    margin-top: 0;
+  }
+  #accommodation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #accommodation h2{
+    flex-basis: 100%;
+  }
+  #accommodation article {
+    flex-basis:48%;
+  }
+  #activity > div{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  #activity > div:nth-of-type(1) article ,#activity > div:nth-of-type(3) article {
+   flex-basis: 100%;
+  }
+  #activity > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
+    flex-basis: 54%;
+  }
+  #activity > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
+    flex-basis: 43%;
+  }
+  #search_bar form{
+    max-width: 400px;
+  }
+  #search_bar form button span{
+    display: initial;
+    font-weight: bold;
+  } 
+  #search_bar form button i {
+    display: none;
+  }
+  #search_bar form button {
+    border-radius: 0 1em 1em 0;
+    padding: 0 10px;
+  } 
 }

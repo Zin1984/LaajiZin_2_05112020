@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 /***********************************************/
 /*******************GENERAL*********************/
 /**********************************************/
@@ -484,6 +484,9 @@ footer ul li a {
   }
   #activity > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
     flex-basis: 43%;
+  }
+  #search_bar form{
+    max-width: 400px;
   }
   #search_bar form button span{
     display: initial;

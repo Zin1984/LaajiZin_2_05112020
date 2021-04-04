@@ -485,4 +485,15 @@ footer ul li a {
   #activity > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
     flex-basis: 43%;
   }
+  #search_bar form button span{
+    display: initial;
+    font-weight: bold;
+  } 
+  #search_bar form button i {
+    display: none;
+  }
+  #search_bar form button {
+    border-radius: 0 1em 1em 0;
+    padding: 0 10px;
+  } 
 }

@@ -524,4 +524,65 @@ footer ul li a {
     flex-basis:33%;
   }
 }
+@media only screen and (min-width: 992px) {
 
+  section {
+    padding: 2em 3em 0em;
+  }
+  header > a:first-of-type {
+    padding-left: 3em;
+  }
+
+  header > a:nth-child(2) {
+    padding-right: 3em;
+  }
+
+  #mostpopular {
+    margin: 1em 3em 0;
+  }
+
+  #accomodation article {
+    flex-basis: 30%;
+  }
+
+  #accomodation a:nth-child(8) {
+    flex-basis: 100%;
+  }
+
+  #activity #col-1,
+  #activity #col-3 {
+    flex-basis: 30%;
+  }
+
+  #activity #col-2,
+  #activity #col-4 {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 65%;
+  }
+
+  #activity #col-1 {
+    order: 0;
+  }
+
+  #activity #col-2 {
+    order: 1;
+  }
+
+  #activity #col-3 {
+    order: 2;
+  }
+
+  #activity #col-4 {
+    order: 3;
+  }
+
+  #activity #col-2 a,
+  #activity #col-4 a {
+    flex-basis: 46%;
+  }
+  
+  footer {
+    padding: 2em 3em 0;
+  }
+}

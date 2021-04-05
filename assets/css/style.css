@@ -510,7 +510,6 @@ footer ul li a {
   }
 
   #mostpopular article {
-    flex-basis: 32%;
     width: 80%;
     display: block;
     margin-left: auto;
@@ -518,14 +517,18 @@ footer ul li a {
   }
 
   #mostpopular article a figure {
-    flex-basis: 30%;
+    flex-basis: 35%;
   }
 
   #mostpopular article a .description {
-    flex-basis: 70%;
+    flex-basis: 65%;
   }
   footer > div {
     display: flex;
     flex-direction: row;
    }
+   footer > div div{
+    flex-basis:33%;
+  }
 }
+

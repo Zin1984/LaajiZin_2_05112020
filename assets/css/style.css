@@ -524,4 +524,10 @@ footer ul li a {
     flex-basis:33%;
   }
 }
+@media only screen and (min-width: 992px) {
+  
+  #accommodation article {
+    flex-basis: 32%;
+  }
 
+}

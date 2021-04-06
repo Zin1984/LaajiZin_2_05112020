@@ -531,3 +531,40 @@ footer ul li a {
   }
 
 }
+@media only screen and (min-width: 1200px){
+  header ,main,footer>div{
+    max-width: 1200px;
+    margin:0 auto;
+  }
+  header>a{
+    order: 1;
+    padding-top: 48px;
+  }
+  header nav{
+    flex-basis: initial;
+    margin-left: auto;
+    margin-top: 0;
+  }
+  header nav ul li, header nav ul li:hover{
+    border-bottom: 0;
+  }
+  header nav ul li:hover{
+    border-top:3px solid #0065fc;
+  }
+  header nav ul li{
+    border-top: 3px solid transparent;
+    padding-top: 45px;
+  }
+  main>div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #accommodation{
+    flex-basis: 68%;
+    background-color: #f2f2f2;
+  }
+  #mostpopular{
+    flex-basis: 30%;
+  }
+}

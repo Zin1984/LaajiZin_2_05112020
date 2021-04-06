@@ -161,6 +161,8 @@ header nav ul li:hover a {
 #filters p {
   display: flex;
   line-height: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #filters p i {
@@ -299,7 +301,6 @@ header nav ul li:hover a {
 
 #accommodation {
   background-color: white;
-  margin-bottom: 25px;
 }
 #accommodation h2 {
   padding-top: 5px;
@@ -327,6 +328,7 @@ header nav ul li:hover a {
 }
 #accommodation article figure{
   height: 60%;
+
 }
 
 #accommodation article figure img {
@@ -343,6 +345,7 @@ header nav ul li:hover a {
   justify-content: space-between;
   flex-basis: 45%;
   padding: 10px 0 10px 20px;
+  background-color: #ffffff;
   }
 
 #accommodation article div h3 {
@@ -427,11 +430,12 @@ header nav ul li:hover a {
 /***********************************************/
 /*******************FOOTER*******************/
 /**********************************************/
-
+footer{
+  background-color: #f2f2f2;
+}
 footer div{
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
   margin-top: 30px;
 }
 footer h3 {
@@ -532,6 +536,11 @@ footer ul li a {
 
 }
 @media only screen and (min-width: 1200px){
+
+  header img{
+    padding-top: 30px;
+  }
+  
   header ,main,footer>div{
     max-width: 1200px;
     margin:0 auto;
@@ -539,11 +548,14 @@ footer ul li a {
   header>a{
     order: 1;
     padding-top: 48px;
+    flex-basis: 10%;
+    text-align: center;
   }
   header nav{
     flex-basis: initial;
     margin-left: auto;
     margin-top: 0;
+    flex-basis: 30%;
   }
   header nav ul li, header nav ul li:hover{
     border-bottom: 0;
@@ -553,7 +565,9 @@ footer ul li a {
   }
   header nav ul li{
     border-top: 3px solid transparent;
+    padding:0;
     padding-top: 45px;
+    
   }
   main>div{
     display: flex;
@@ -563,8 +577,41 @@ footer ul li a {
   #accommodation{
     flex-basis: 68%;
     background-color: #f2f2f2;
+    border-radius: 25px;
+  }
+  #accommodation a{
+   padding-top: 20px;
+   padding-bottom: 25px;
   }
   #mostpopular{
     flex-basis: 30%;
+    border-radius: 25px;
+  }
+  #mostpopular article a figure{
+    flex-basis: 40%;
+  }
+  #mostpopular article{
+    width: 100%;
+  }
+  #activity{
+  
+  }
+  #activity h2{
+    margin-bottom: 30px;
+  }
+  #activity div{
+    flex-direction: column;
+  }
+  #activity div{
+    flex-basis: 22%;
+  }
+  #activity div {
+    display: flex;
+    flex-direction: row;
+  }
+  #activity div div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
   }
 }

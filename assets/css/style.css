@@ -575,17 +575,22 @@ footer ul li a {
     justify-content: space-between;
   }
   #accommodation{
-    flex-basis: 68%;
+    flex-basis: 66%;
     background-color: #f2f2f2;
     border-radius: 25px;
+    margin-left: 10px;
+    font-size: 90%;
   }
   #accommodation a{
    padding-top: 20px;
    padding-bottom: 25px;
+  
   }
   #mostpopular{
     flex-basis: 30%;
     border-radius: 25px;
+    margin-right: 20px;
+    font-size: 90%;
   }
   #mostpopular article a figure{
     flex-basis: 40%;
@@ -593,21 +598,16 @@ footer ul li a {
   #mostpopular article{
     width: 100%;
   }
-  #activity{
-  
-  }
+
   #activity h2{
     margin-bottom: 30px;
+    padding-top: 40px;
   }
-  #activity div{
-    flex-direction: column;
-  }
-  #activity div{
-    flex-basis: 22%;
-  }
+  
   #activity div {
     display: flex;
     flex-direction: row;
+    height: 500px;
   }
   #activity div div{
     display: flex;

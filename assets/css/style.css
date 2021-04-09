@@ -319,6 +319,7 @@ header nav ul li:hover a {
   height: 220px;
   box-shadow: 0 0 20px #0000002e;
   margin-bottom: 15px;
+  background-color: white;
 }
 #accommodation article a{
   display: flex;
@@ -345,7 +346,6 @@ header nav ul li:hover a {
   justify-content: space-between;
   flex-basis: 45%;
   padding: 10px 0 10px 20px;
-  background-color: #ffffff;
   }
 
 #accommodation article div h3 {
@@ -473,18 +473,19 @@ footer ul li a {
   #accommodation article {
     flex-basis:48%;
   }
-  #activity > div{
+  #activity div > div{
     display: flex;
     justify-content: space-between;
 
   }
-  #activity > div:nth-of-type(1) article ,#activity > div:nth-of-type(3) article {
+  
+  #activity div > div:nth-of-type(1) article ,#activity div > div:nth-of-type(3) article {
    flex-basis: 100%;
   }
-  #activity > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
+  #activity div > div:nth-of-type(2) article:first-child,#activity div > div:nth-of-type(4) article:last-child {
     flex-basis: 54%;
   }
-  #activity > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
+  #activity div > div:nth-of-type(2) article:last-child,#activity div > div:nth-of-type(4) article:first-child {
     flex-basis: 43%;
   }
   #search_bar form{
@@ -598,15 +599,14 @@ footer ul li a {
   #mostpopular article{
     width: 100%;
   }
-
   #activity h2{
     margin-bottom: 30px;
     padding-top: 40px;
   }
-  
   #activity div {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 500px;
   }
   #activity div div{

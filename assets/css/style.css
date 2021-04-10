@@ -31,11 +31,14 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  
+ 
 }
 
-header img {
+header>img {
   margin-left: 15px;
+  height: 90%;
+
 }
 
 header > a {
@@ -319,7 +322,6 @@ header nav ul li:hover a {
   height: 220px;
   box-shadow: 0 0 20px #0000002e;
   margin-bottom: 15px;
-  background-color: white;
 }
 #accommodation article a{
   display: flex;
@@ -346,6 +348,8 @@ header nav ul li:hover a {
   justify-content: space-between;
   flex-basis: 45%;
   padding: 10px 0 10px 20px;
+  background-color: #ffffff;
+  border-radius: 13px;
   }
 
 #accommodation article div h3 {
@@ -538,19 +542,19 @@ footer ul li a {
 }
 @media only screen and (min-width: 1200px){
 
-  header img{
-    padding-top: 30px;
-  }
+ 
   
   header ,main,footer>div{
-    max-width: 1200px;
-    margin:0 auto;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
   header>a{
     order: 1;
-    padding-top: 48px;
     flex-basis: 10%;
     text-align: center;
+    padding-top: 48px;
   }
   header nav{
     flex-basis: initial;
@@ -561,11 +565,19 @@ footer ul li a {
   header nav ul li, header nav ul li:hover{
     border-bottom: 0;
   }
+
+  header > img{
+    padding-top: 17px;
+   }
+
   header nav ul li:hover{
-    border-top:3px solid #0065fc;
+    border-top:3.5px solid #0065fc;
+    padding-top: 45px;
   }
+ 
+  
   header nav ul li{
-    border-top: 3px solid transparent;
+    border-top: 3.5px solid transparent;
     padding:0;
     padding-top: 45px;
     
@@ -599,19 +611,22 @@ footer ul li a {
   #mostpopular article{
     width: 100%;
   }
+
   #activity h2{
     margin-bottom: 30px;
     padding-top: 40px;
   }
+  
   #activity div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 500px;
+    justify-content: space-between;
   }
   #activity div div{
     display: flex;
     flex-direction: column;
     flex-basis: 22%;
+    
   }
 }

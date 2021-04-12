@@ -18,7 +18,7 @@ article div ul li i[data-active="true"]{
   color: #0065fc;
 }
 article div ul li i[data-active="false"]{
-  color:  rgb(245, 239, 239);
+  color:  #d9d9d9;
   font-size: 0.8em;
 }
 
@@ -31,8 +31,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
- 
+  margin-top: 15px;
 }
 
 header>img {
@@ -156,7 +155,7 @@ header nav ul li:hover a {
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 #filters p {
@@ -415,7 +414,7 @@ header nav ul li:hover a {
 #activity h2{
   font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 8%;
+  margin-bottom: 30px;
 }
 #activity article figure{
   height: 100%;
@@ -460,7 +459,10 @@ footer ul li a {
     float: left;
     margin-right:15px;
     margin-top: 0;
+    margin-bottom: 0;
+    line-height: 2.3em;
   }
+
   #accommodation{
     display: flex;
     flex-direction: row;
@@ -539,7 +541,6 @@ footer ul li a {
 @media only screen and (min-width: 1200px){
 #search_bar,#filters{
   padding: 20px 0;
-
 }
 
   header ,main,footer>div{
@@ -550,10 +551,11 @@ footer ul li a {
 
   header>a{
     order: 1;
-    flex-basis: 15%;
+    flex-basis: 10%;
     text-align: center;
     padding-top: 48px;
     margin-right: 0;
+    text-align: right;
   }
 
   header nav{
@@ -598,13 +600,11 @@ footer ul li a {
   #accommodation a{
    padding-top: 20px;
    padding-bottom: 25px;
-  
   }
+
   #mostpopular{
     flex-basis: 30%;
     border-radius: 25px;
-    margin-right: 20px;
-    font-size: 90%;
   }
 
   #mostpopular article a figure{
@@ -614,7 +614,6 @@ footer ul li a {
   #mostpopular article{
     width: 100%;
   }
-
   #activity{
     display: flex;
     flex-direction: row;

@@ -37,6 +37,9 @@ header {
 header>img {
   margin-left: 15px;
 }
+article:hover {
+  transform: scale(1.01);
+}
 
 header > a {
   color: #277dfc;
@@ -294,7 +297,6 @@ header nav ul li:hover a {
   text-decoration: none;
 }
 
-
 /***********************************************/
 /*****************ACCOMODATION*****************/
 /**********************************************/
@@ -326,9 +328,9 @@ header nav ul li:hover a {
   height: 100%;
   padding: 5px;
 }
+
 #accommodation article figure{
   height: 60%;
-
 }
 
 #accommodation article figure img {
@@ -393,9 +395,9 @@ header nav ul li:hover a {
 #activity article figcaption h3 {
   color: black;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 1rem;
- 
+  padding-right: 1rem;
 }
 #activity article figcaption{
   flex: 0 0 55px;
@@ -626,17 +628,19 @@ footer ul li a {
   #activity >div{
     flex-basis: 23%;
     flex-direction: column;
-    height: 500px;
+    height: 450px;
   }
   #activity article{
     height: initial;
     margin-bottom: 0;
   }
+  
   #activity  > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
     height: 54%;
   }
-  #activity  > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
-    height: 43%;
-  }
 
+  #activity  > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
+    height: 30%;
+  }
+  
 }

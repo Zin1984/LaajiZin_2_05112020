@@ -314,6 +314,8 @@ header nav ul li:hover a {
   font-weight: bold;
   font-size: 1.1em;
   color:black;
+  padding: auto;
+  
 }
 
 #accommodation article {
@@ -624,11 +626,12 @@ footer ul li a {
   }
   #activity h2{
     flex-basis: 100%;
+    margin-top: 3%;
   }
   #activity >div{
     flex-basis: 23%;
     flex-direction: column;
-    height: 450px;
+    height: 500px;
   }
   #activity article{
     height: initial;
@@ -636,11 +639,11 @@ footer ul li a {
   }
   
   #activity  > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
-    height: 54%;
+    height: 50%;
   }
 
   #activity  > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
-    height: 30%;
+    height: 35%;
   }
   
 }

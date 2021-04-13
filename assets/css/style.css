@@ -635,7 +635,7 @@ footer ul li a {
   }
   #activity article{
     height: initial;
-    margin-bottom: 0;
+    margin-bottom: 10%;
   }
   
   #activity  > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {

@@ -18,7 +18,7 @@ article div ul li i[data-active="true"]{
   color: #0065fc;
 }
 article div ul li i[data-active="false"]{
-  color:  rgb(245, 239, 239);
+  color:  #d9d9d9;
   font-size: 0.8em;
 }
 
@@ -34,8 +34,11 @@ header {
   margin-top: 15px;
 }
 
-header img {
+header>img {
   margin-left: 15px;
+}
+article:hover {
+  transform: scale(1.01);
 }
 
 header > a {
@@ -155,12 +158,14 @@ header nav ul li:hover a {
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 #filters p {
   display: flex;
   line-height: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #filters p i {
@@ -292,14 +297,12 @@ header nav ul li:hover a {
   text-decoration: none;
 }
 
-
 /***********************************************/
 /*****************ACCOMODATION*****************/
 /**********************************************/
 
 #accommodation {
   background-color: white;
-  margin-bottom: 25px;
 }
 #accommodation h2 {
   padding-top: 5px;
@@ -311,6 +314,8 @@ header nav ul li:hover a {
   font-weight: bold;
   font-size: 1.1em;
   color:black;
+  padding: auto;
+  
 }
 
 #accommodation article {
@@ -325,6 +330,7 @@ header nav ul li:hover a {
   height: 100%;
   padding: 5px;
 }
+
 #accommodation article figure{
   height: 60%;
 }
@@ -391,9 +397,9 @@ header nav ul li:hover a {
 #activity article figcaption h3 {
   color: black;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 1rem;
- 
+  padding-right: 1rem;
 }
 #activity article figcaption{
   flex: 0 0 55px;
@@ -412,7 +418,7 @@ header nav ul li:hover a {
 #activity h2{
   font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 8%;
+  margin-bottom: 30px;
 }
 #activity article figure{
   height: 100%;
@@ -427,11 +433,12 @@ header nav ul li:hover a {
 /***********************************************/
 /*******************FOOTER*******************/
 /**********************************************/
-
+footer{
+  background-color: #f2f2f2;
+}
 footer div{
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
   margin-top: 30px;
 }
 footer h3 {
@@ -456,7 +463,10 @@ footer ul li a {
     float: left;
     margin-right:15px;
     margin-top: 0;
+    margin-bottom: 0;
+    line-height: 2.3em;
   }
+
   #accommodation{
     display: flex;
     flex-direction: row;
@@ -474,13 +484,14 @@ footer ul li a {
     justify-content: space-between;
 
   }
+  
   #activity > div:nth-of-type(1) article ,#activity > div:nth-of-type(3) article {
    flex-basis: 100%;
   }
-  #activity > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
+  #activity  > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
     flex-basis: 54%;
   }
-  #activity > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
+  #activity  > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
     flex-basis: 43%;
   }
   #search_bar form{
@@ -530,4 +541,109 @@ footer ul li a {
     flex-basis: 32%;
   }
 
+}
+@media only screen and (min-width: 1200px){
+#search_bar,#filters{
+  padding: 20px 0;
+}
+
+  header ,main,footer>div{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  header>a{
+    order: 1;
+    flex-basis: 10%;
+    text-align: center;
+    padding-top: 48px;
+    margin-right: 0;
+    text-align: right;
+  }
+
+  header nav{
+    flex-basis: initial;
+    margin-left: auto;
+    margin-top: 0;
+    flex-basis: 30%;
+  }
+
+  header nav ul li, header nav ul li:hover{
+    border-bottom: 0;
+  }
+
+  header > img{
+    padding-top: 17px;
+    margin-left: 0;
+   }
+
+  header nav ul li:hover{
+    border-top:3px solid #0065fc;
+  }
+ 
+  header nav ul li{
+    border-top: 3px solid transparent;
+    padding:0;
+    padding-top: 45px;
+  }
+
+  main>div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #accommodation{
+    flex-basis: 66%;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    font-size: 90%;
+  }
+
+  #accommodation a{
+   padding-top: 20px;
+   padding-bottom: 25px;
+  }
+
+  #mostpopular{
+    flex-basis: 30%;
+    border-radius: 25px;
+  }
+
+  #mostpopular article a figure{
+    flex-basis: 40%;
+  }
+
+  #mostpopular article{
+    width: 100%;
+  }
+  #activity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #activity h2{
+    flex-basis: 100%;
+    margin-top: 3%;
+  }
+  #activity >div{
+    flex-basis: 23%;
+    flex-direction: column;
+    height: 500px;
+  }
+  #activity article{
+    height: initial;
+    margin-bottom: 10%;
+  }
+  
+  #activity  > div:nth-of-type(2) article:first-child,#activity > div:nth-of-type(4) article:last-child {
+    height: 50%;
+  }
+
+  #activity  > div:nth-of-type(2) article:last-child,#activity > div:nth-of-type(4) article:first-child {
+    height: 35%;
+  }
+  
 }
